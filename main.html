@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/cfp.css">
+	
+	<link rel="icon" href="imgs/pic4.png">
+	<title> CALLE FELIZ PIZZA </title>
+		
+</head>
+<body style="background-color:#dc9335;">
+
+
+	<!-- Navigation Bar -->	
+	
+	<nav>
+	<div class="navbar" id="keep">
+	<div>
+			<img class="logo" src="imgs/pic4.png" alt="">
+			<a href="pages/cart.php"><img class="cart" src="imgs/CART.png" alt=""></a>
+	</div>
+	
+		<ul>
+			<li><a href="#">Home </a></li>
+			<li><a>Menu </a>
+				<div class="content">
+					<ul>
+						<li><a href="pages/pizzas.php"> Pizzas </a></li>
+						<li><a href="pages/pasta.php"> Pastas</a></li>
+						<li><a href="pages/combos.php"> Combos </a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="pages/about.html">About us </a></li>
+		<ul>
+	</div>
+	</nav>
+
+	<!-- Side Nav 
+		
+	<nav>
+		<div id="Sidenav">
+			<a href="https://www.facebook.com/CalleFelizPizza" id="fb"><img src="imgs/fb.png" alt="facebook"></a>
+			<a href="#" id="twitter"><img src="imgs/t.png" alt="twitter"></a>
+			<a href="https://www.instagram.com/callefelizpizza/" id="ig"><img src="imgs/ig.png" alt="instagram"></a>
+		</div>
+	</nav>
+	-->
+	
+	
+	<!-- Header -->	
+
+	<header>
+		<section class="frontimage">
+
+		</section>
+	</header>
+	
+		<!--TRY-->
+
+	<div class="locc"><center>
+			<div class="locc3txt"> <img src="imgs/locc.png" style="width:50px;height:80px;"></div>
+			<div class="address">5 Chestnut, Novaliches, Quezon City, 1118 Metro Manila</div></center>
+	</div>
+  <br>
+  <br>
+  
+	
+
+	<div class="slideshow-container" style="left:300px;display:table-cell;">
+		<div class="mySlides fade">
+			<img src="imgs/p13.jpg" style="width:60%;height:100&;" alt="">
+			<span></span>
+		</div>
+		<div class="mySlides fade">
+			<img src="imgs/p10.jpg" style="width:60%;height:100&;" alt="">
+		</div>
+		<div class="mySlides fade">
+			<img src="imgs/p15.jpg" style="width:60%;height:100&;" alt="">
+		</div>
+		<div class="mySlides fade">
+			<img src="imgs/p7.jpg" style="width:60%;height:100&;" alt="">
+		</div>
+	</div>
+	
+	<div style="display:table-cell">
+	<img src="imgs/pizzatalk.png" style="width:60%;height:100&;" alt="">
+	</div>
+	<br><br>
+ 
+ <!--FOR SLIDESHOW-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+	<div class="loc2">
+		<center>
+		<br>
+		<div class="wd">
+		Wanna deliver?
+		</div>
+		<a href="pages/pizzas.php"><button class="botones">ORDER NOW!</button></a>
+		</center>
+	</div>
+	
+	
+	<div style="background-image:url(imgs/bgwood.jpg)">
+	<br>
+	<center>
+	<div class="diner">
+	VISIT OUR HUMBLE DINER
+	</div>
+	<br><br>
+	<div class="diner2">
+	<br>OPERATING HOURS
+	</div>
+	<div class="diner3">
+	<br>MONDAY - SUNDAYS : 1:00PM - 10:00PM 
+	</div>
+	
+	<!--BUTOON TO SHOW THE MAP-->
+	<br><br><br><br><br>
+	<button id="myBtn" class="botones">GET DIRECTIONS</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="map-responsive">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61747.604367209016!2d121.0390919112083!3d14.699848773170975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0b91c01b8cf%3A0xfdd54257b3645a7!2s5%20Chestnut%2C%20Novaliches%2C%20Quezon%20City%2C%201118%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1635214109917!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</div>
+	</center>
+	<br><br><br><br><br>
+
+<!--FOR POP OUT-->
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
+	
+<!--TRY-->
+
+
+
+
+	<footer>
+		<div class="foot">
+			<h3>CALLE FELIZ PIZZA</h3>
+            <p>Cheese and Spice on every splice!</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/CalleFelizPizza"><img src="imgs/fb.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="imgs/t.png" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com/callefelizpizza/"><img src="imgs/ig.png" alt="instagram"></a></li>
+            </ul>
+			
+			<div class="footer-bottom">
+				<p>copyright &copy; 2021. <a> ITPM. </a> All rights reserved.</p>
+				<!--ADMIN PAGE-->
+				
+				<input onclick="document.getElementById('id02').style.display='block'" type="image"  src="imgs/adminsetting.png" style="height:40px;width:40px;">
+				
+				<div id="id02" class="modal">
+  
+				<form class="modal-content animate" action="admin_login.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+				</div>
+
+				<center>
+  
+				<h2 style="color:black;">ADMIN LOGIN</h2>
+				<br>
+			
+				<table>
+				<tr><td style="color:black;"> USERNAME: </td><td><input [type=text] name=admin_username required style="padding:10px;height:5px;width:200px;"><br></td><tr>
+				<tr><td style="color:black;"> PASSWORD: </td><td><input type=password name=admin_password required style="padding:10px;height:5px;width:200px;"><br></td></tr>
+				<tr><td colspan=2><br><br>
+				<center>
+				<input type=submit value=LOGIN style="width:340px;padding:10px;border:none;background:#dc9335;color:white;font-size:16px;"><br><br>
+				<input type=reset value=CLEAR style="width:340px;padding:10px;border:none;background:#a62828;color:white;font-size:16px;">
+				</center>
+				</td></tr>
+			
+				<br>	
+				</form>
+				</div>
+				
+				
+				<!--END OF ADMIN PAGE-->
+			</div>
+		</div>
+		
+	</footer>
+
+	
+	
+</body>
+</html>
